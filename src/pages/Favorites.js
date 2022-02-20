@@ -21,7 +21,7 @@ const Favorites = ({ favChars, favComics, setFavChar, setFavChomic }) => {
       favChars.split("/").map(async (el) => {
         console.log("getting data for ==>", el);
         const response = await axios.get(
-          `http://localhost:4000/character/${el}`
+          `https://marvel-vdnj-backend.herokuapp.com/character/${el}`
         );
         const newData = [...favCharsData];
         newData.push(response.data);

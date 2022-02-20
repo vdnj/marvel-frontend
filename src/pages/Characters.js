@@ -15,7 +15,7 @@ const Characters = ({ setFavChar, favChars }) => {
       try {
         console.log("fetching data");
         const response = await axios.get(
-          `http://localhost:4000/characters/all?limit=${
+          `https://marvel-vdnj-backend.herokuapp.com/characters/all?limit=${
             limit ? limit : 100
           }&skip=${page > 1 ? (page - 1) * limit : 0}&name=${encodeURI(search)}`
         );

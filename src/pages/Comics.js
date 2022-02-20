@@ -14,9 +14,11 @@ const Comics = ({ setFavComic, favComics }) => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:4000/comics?limit=${limit ? limit : 100}&skip=${
-            page > 1 ? (page - 1) * limit : 0
-          }&title=${encodeURI(search)}`
+          `https://marvel-vdnj-backend.herokuapp.com/comics?limit=${
+            limit ? limit : 100
+          }&skip=${page > 1 ? (page - 1) * limit : 0}&title=${encodeURI(
+            search
+          )}`
         );
         setData(response.data.results);
         setIsLoading(false);
