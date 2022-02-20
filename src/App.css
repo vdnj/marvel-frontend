@@ -1,1 +1,153 @@
-/* Other rules */
+/* GLOBAL */
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&family=Roboto&display=swap");
+
+body {
+  box-sizing: border-box;
+  font-family: "Roboto", "sans serif";
+  margin: 0;
+}
+
+/* HEADER */
+header {
+  background-color: #202020;
+}
+
+.logo-section {
+  display: flex;
+  justify-content: center;
+  border: 0.1px solid lightgrey;
+}
+
+nav {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 30px;
+  list-style-type: none;
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+nav li:hover {
+  cursor: pointer;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-bar {
+  color: #202020;
+}
+
+.search-bar input {
+  height: 20px;
+  margin: 20px;
+}
+
+/* CHARACTERS PAGE */
+/* .characters-pres {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #202020;
+}
+
+.characters-pres img {
+  width: 60%;
+  position: relative;
+}
+
+.characters-pres .text {
+  top: 30%;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  color: white;
+  background-color: rgba(32, 32, 32, 0.4);
+} */
+
+/* CARDS */
+.comic-card h2 {
+  color: white;
+}
+
+.characters-list,
+.comics-list,
+.all-comics {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 50px;
+}
+
+.presentation {
+  text-align: center;
+  color: #202020;
+}
+
+.character-card,
+.comic-card {
+  width: 200px;
+  height: 400px;
+  background-color: #202020;
+  margin: 20px;
+  border-bottom-right-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.fav-star {
+  color: white;
+  position: absolute;
+  top: 0px;
+  right: 15px;
+  border: 1px solid #e62429;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.fav-star:hover {
+  cursor: pointer;
+}
+
+.character-card img,
+.comic-card img {
+  height: 230px;
+  width: 200px;
+  border-bottom: 3px solid #e62429;
+}
+
+.card-description {
+  color: lightgray;
+}
+
+/* OTHER */
+.pages {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.pages button {
+  margin: 10px;
+  background-color: white;
+  color: #202020;
+  border: none;
+}
+
+.pages button:hover {
+  cursor: pointer;
+  color: #e62429;
+}
+
+.loading {
+  text-align: center;
+  color: #202020;
+}
